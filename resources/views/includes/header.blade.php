@@ -1,6 +1,6 @@
 <header class="header">
     <div class="container nav">
-        <h1>Erick José Sanchez Pinedo</h1>
+        <h2>Erick José Sanchez Pinedo</h2>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre M&#xed;</a></li>

@@ -24,22 +24,7 @@
 
     @include('includes.header')
 
-    <section id="inicio" class="hero">
-        <div class="hero-content animate">
-            <div class="hero-text">
-                <h1>Desarrollador Web Full Stack</h1>
-                <p>Desarrollador web apasionado con experiencia en la creación de aplicaciones web modernas y soluciones
-                    digitales innovadoras. Especializado en tecnologías frontend y backend para crear experiencias de
-                    usuario excepcionales.</p>
-                <a href="#contacto" class="btn">Contáctame</a>
-            </div>
-            <div class="profile-container">
-                <div class="profile-img">
-                    <img src="build/assets/frontend/img/2pofe.jpg" alt="Tu Foto">
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('includes.home')
 
     <section id="sobre-mi" class="section">
         <div class="animate container">
@@ -110,31 +95,7 @@
         </div>
     </section>
 
-    <section id="contacto" class="section">
-        <div class="animate container">
-            <h2 class="section-title">Contacto</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar Mensaje</button>
-            </form>
-            <div class="social-links">
-                <a href="https://github.com/tuuser"><i class="fa-github fab"></i></a>
-                <a href="https://linkedin.com/in/tuuser"><i class="fa-linkedin fab"></i></a>
-                <a href="https://twitter.com/tuuser"><i class="fa-twitter fab"></i></a>
-            </div>
-        </div>
-    </section>
+    @include('includes.contac')
 
     @include('includes.footer')
 
