@@ -2,9 +2,12 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\app\homeController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(homeController::class)->group(function () {
+    Route::get('/', 'inicio')->name('home.inicio');
+    Route::get('/nosotros', 'nosotros')->name('nosotros');
+    Route::get('/contacto', 'contacto')->name('contacto');
 });
 
 Route::get('/dashboard', function () {
